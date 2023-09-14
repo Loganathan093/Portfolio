@@ -1,0 +1,133 @@
+*
+{
+    margin: 0;
+    padding: 1rem;
+    font-family: monospace;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+#name
+{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 350%;
+    color: white;
+    animation: fc 3s infinite;
+}
+
+@media(min-width:300px)
+{
+    #name{font-size: 180%;}
+}
+
+@media(min-width:600px)
+{
+    #name{font-size: 250%;}
+}
+
+@media(min-width:1200px)
+{
+    #name{font-size: 350%;}
+}
+
+@keyframes fc {
+
+    0%, 100%
+    {
+        color: white;
+    }
+
+    25%
+    {
+        color: #FFE4E1;
+    }
+
+    50%
+    {
+        color: #F4A460	;
+    }
+
+    75%
+    {
+        color: #1E90FF	;
+    }    
+}
+
+#name:hover
+{
+    text-transform:uppercase;
+    
+}
+#bt
+{
+    color: white;
+}
+body
+{
+    background-color: #000000;
+}
+
+#links
+{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 250%;
+    margin-bottom: 80px;
+  
+}
+
+@media (min-width:300px)
+{
+    #links{font-size: 130%;}
+}
+
+@media (min-width:600px)
+{
+    #links{font-size: 200%;}
+}
+
+@media (min-width:1200px)
+{
+    #links{font-size: 250%;}
+}
+
+
+#links *
+{
+    display: inline;
+}
+
+.cards
+{
+    display: grid;
+    margin-top: 0 auto;
+    max-width: 1200px;
+}
+
+#c
+{
+    margin: 10px;
+    height: 200px;
+    background-color: #BB8FCE;
+    box-shadow:2px 2px#FFE4E1;
+}
+
+@media (min-width:600px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:900px){
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
