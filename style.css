@@ -14,13 +14,14 @@ a
     text-decoration: none;
     color: white;
 }
+
 #name
 {
     text-align: center;
     margin-top: 100px;
     font-size: 350%;
     color: white;
-    animation: fc 3s infinite;
+    animation: fc 2s infinite;
 }
 
 @media(min-width:300px)
@@ -45,27 +46,21 @@ a
         color: white;
     }
 
-    25%
-    {
-        color: #FFE4E1;
-    }
+    
 
     50%
     {
-        color: #F4A460	;
+        color: gray;
     }
 
-    75%
-    {
-        color: #1E90FF	;
-    }    
+    
 }
 
-#name:hover
+/* #name:hover
 {
     text-transform:uppercase;
     
-}
+} */
 #bt
 {
     color: white;
@@ -86,7 +81,7 @@ body
 
 @media (min-width:300px)
 {
-    #links{font-size: 130%;}
+    #links{font-size: 100%;}
 }
 
 @media (min-width:600px)
@@ -108,7 +103,7 @@ body
 .cards
 {
     display: grid;
-    margin-top: 0 auto;
+    margin: 0 auto;
     max-width: 1200px;
 }
 
@@ -116,8 +111,20 @@ body
 {
     margin: 10px;
     height: 200px;
-    background-color: #BB8FCE;
-    box-shadow:2px 2px#FFE4E1;
+    background-color: black;
+    transition: 1s; /* Add a smooth transition effect */
+    box-shadow:0px 0px 2px 2px 2px#FFE4E1;
+    /* border: 2px solid white; */
+    transform-origin: center center;
+    border: 2px solid gray;
+    
+}
+
+#c:hover
+{
+   transform: scale(1.1);
+
+    
 }
 
 @media (min-width:600px){
@@ -130,4 +137,12 @@ body
     .cards{
         grid-template-columns: repeat(3,1fr);
     }
+}
+
+.cards p
+{
+    text-align: center;
+    line-height: 200px;
+    font-size: 200%;
+    
 }
